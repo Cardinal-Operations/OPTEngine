@@ -19,7 +19,7 @@ By offering scalable instances across these fundamental problem types, OPT-Engin
 
 
 ## Updates
-- **2026.01.29** - SIRL paper published on arXiv: [OPT-Engine: Benchmarking the Limits of LLMs in Optimization Modeling via Complexity Scaling](https://arxiv.org/abs/2601.19924).
+- **2026.01.29** - OPT-Engine paper published on arXiv: [OPT-Engine: Benchmarking the Limits of LLMs in Optimization Modeling via Complexity Scaling](https://arxiv.org/abs/2601.19924).
 
 
 ## The OPT-Engine Pipeline
