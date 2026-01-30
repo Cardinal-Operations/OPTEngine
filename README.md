@@ -11,7 +11,9 @@
 ## Overview
 We introduce OPT-Engine, an extensible benchmark framework featuring quantifiable and controllable complexity. OPT-Engine spans ten canonical operations research problems, systematically progressing from Linear Programming to Mixed-Integer Programming. This structured hierarchy provides a principled environment for evaluating automated problem formulation and solving techniques.
 
-The framework currently includes two core problem families:1. **Linear Programming (LP)** – Five optimization classes: Inventory Problem ; Portfolio Allocation Problem; Production Problem; Transportation Problem; Pollution Control Problem; 2. **Mixed-Integer Programming (MIP)** – Five combinatorial optimization classes with integrality constraints: Traveling Salesman Problem (TSP); Knapsack Problem; Bin Packing Problem; Job-Shop Scheduling Problem; Minimum-Cost Network Flow Problem
+The framework currently includes two core problem families:
+   1. **Linear Programming (LP)** –  Inventory Problem ; Portfolio Allocation Problem; Production Problem; Transportation Problem; Pollution Control Problem;
+   2. **Mixed-Integer Programming (MIP)** – : Traveling Salesman Problem (TSP); Knapsack Problem; Bin Packing Problem; Job-Shop Scheduling Problem; Minimum-Cost Network Flow Problem
 
 By offering scalable instances across these fundamental problem types, OPT-Engine enables systematic assessment of solver performance and formulation robustness across varying levels of computational complexity.
 
