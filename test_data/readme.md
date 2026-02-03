@@ -22,7 +22,7 @@ test_data/
 
 The `perturbation/` dataset contains three categories of controlled perturbations applied to the canonical instances:
 
-   1.  **LinguisticComplexity**: Modifies the **natural-language description** of the problem without changing its underlying mathematical formulation.
+   1. **LinguisticComplexity**: Modifies the **natural-language description** of the problem without changing its underlying mathematical formulation.
       * Purpose: test robustness to paraphrasing and increased linguistic complexity (Measured by PPL).
       * Effect: the optimization structure (variables/constraints/objective) is intended to remain equivalent to the canonical version.
 
@@ -30,7 +30,7 @@ The `perturbation/` dataset contains three categories of controlled perturbation
       * Purpose: evaluate whether a model truly follows the optimization goal rather than relying on a memorized canonical objective.
       * Effect: the optimal solution may change due to the objective shift.
 
-   3.  **ConstraintPertubations**: Adds **additional simple constraints** on top of the original canonical formulation, while keeping the rest of the problem unchanged.
+   3. **ConstraintPertubations**: Adds **additional simple constraints** on top of the original canonical formulation, while keeping the rest of the problem unchanged.
 
       * Purpose: evaluate whether a model can correctly incorporate minor constraint changes.
       * Effect: the feasible region is slightly modified (often tightened), which may change feasibility and/or the optimal solution.
