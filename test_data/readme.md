@@ -28,7 +28,7 @@ The `perturbation/` dataset contains three categories of controlled perturbation
 
    2. **ObjectivePertubation**: Modifies the **objective function** of the canonical problem while keeping the rest of the formulation largely the same.
       * Purpose: evaluate whether a model truly follows the optimization goal rather than relying on a memorized canonical objective.
-      * Effect: the optimal solution may change due to the objective shift.
+      * Effect: the optimal solution remains unchanged even if the objective function shifts.
 
    3. **ConstraintPertubations**: Adds **additional simple constraints** on top of the original canonical formulation, while keeping the rest of the problem unchanged.
 
