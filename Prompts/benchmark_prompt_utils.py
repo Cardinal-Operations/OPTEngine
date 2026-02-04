@@ -1,17 +1,5 @@
 benchmark_gurobi_prompts= {
-  "zeroshot_q2mc_en": f"""
-  You are an operation research and gurobi solver expert. Below is an operations research question. 
-{{Question}}
-Build a mathematical model and corresponding gurobi code in python that appropriately addresses the question.
-for Python code ,starting with the following lines:```python\n
-import gurobipy as gp\n
-from gurobipy import GRB\n```
-- Make sure the model variable is named 'model'.
-- Avoid using "<" and ">" in Gurobi constraints; instead, use "<=" or ">=" as appropriate.
-- Carefully determine whether the variable is an integer or a continuous variable
-Think step by step. 
-""",
-"zeroshot_q2mc_v2": f"""
+"zeroshot_q2mc_en": f"""
 You are an operation research and gurobi solver expert. Below is an operations research question:
 {{Question}}
 Carefully analyze the problem to identify the core elements such as Decision Variables, Objective Function, and Constraints,
