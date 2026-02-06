@@ -20,7 +20,7 @@ test_data/
 
 | Category | Problem Class | Problem Number | Description |
 | :--- | :---: | :---: | :--- |
-| **Canonical** | 10 | 2690 | Baseline instances across 10 distinct problem classes. |
+| **Canonical** | 10 | 1810 | Baseline instances across 10 distinct problem classes. |
 | **LinguisticComplexity** | 3 | 1640 | Descriptions across three levels of difficulty: Easy, Moderate, and Hard. |
 | **ObjectivePerturbation** | 3 | 1060 | Pairs of original problems and variants with modified objective functions. |
 | **ConstraintAugmentation** | 3 | 1060 | Original problems paired with versions containing additional constraints. |
