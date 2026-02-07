@@ -1,2 +1,0 @@
-pass@1 accuracy for dataset OptMATHBench166: 72/166 = 0.43373493975903615, error types: [65 72  1 27  1]
-pass@1 accuracy for dataset OptMATHBench166: 73/166 = 0.4397590361445783, error types: [62 73  3 24  4]

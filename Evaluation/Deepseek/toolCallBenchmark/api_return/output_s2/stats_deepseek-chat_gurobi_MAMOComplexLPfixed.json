@@ -1,2 +1,0 @@
-pass@1 accuracy for dataset MAMOComplexLPfixed: 115/203 = 0.5665024630541872, error types: [ 59 115   0  25   4]
-pass@1 accuracy for dataset MAMOComplexLPfixed: 127/203 = 0.625615763546798, error types: [ 55 127   0  20   1]

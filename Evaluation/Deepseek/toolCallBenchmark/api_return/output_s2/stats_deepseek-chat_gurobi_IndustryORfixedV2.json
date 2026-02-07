@@ -1,2 +1,0 @@
-pass@1 accuracy for dataset IndustryORfixedV2: 60/100 = 0.6, error types: [25 60  1 11  3]
-pass@1 accuracy for dataset IndustryORfixedV2: 61/100 = 0.61, error types: [23 61  1  8  7]
