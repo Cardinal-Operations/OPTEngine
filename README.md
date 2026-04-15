@@ -75,7 +75,7 @@ If you find OPT-Engine useful or relevant to your research, please consider citi
 ## Contact
 For any questions or issues regarding the pipeline or datasets, please raise an issue on our GitHub repository or contact one of the authors via emails:
 
-Yitian Chen, chenyitian@shanshu.ai
+Yitian Chen, yitianartsky@gmail.com
 
 Cheng Cheng, clairecheng0709@gmail.com
 
