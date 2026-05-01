@@ -15,7 +15,7 @@ OPT-Engine facilitates rigorous, reproducible studies on how problem complexity 
 ![Pipeline](images/instance_pic.png)
 
 ## Updates
-- **2026.05.1** - Our paper has been accepted for a poster presentation at ICML 2026! 🔥
+- **2026.05.01** - Our paper has been accepted for a poster presentation at ICML 2026! 🔥
 - **2026.01.29** - OPT-Engine paper published on arXiv: [OPT-Engine: Benchmarking the Limits of LLMs in Optimization Modeling via Complexity Scaling](https://arxiv.org/abs/2601.19924).
 
 
