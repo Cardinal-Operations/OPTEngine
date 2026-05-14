@@ -1,4 +1,4 @@
-
+<img width="316" height="59" alt="image" src="https://github.com/user-attachments/assets/4c41ab76-d4b4-4eeb-a2e0-3725c8dce5ba" />
 <h2 align="center"> OPT-Engine: Benchmarking the Limits of LLMs in Optimization Modeling via Complexity Scaling</h2>
 <p align="center">
     <p align="center" style="white-space: nowrap;">
@@ -13,6 +13,11 @@ OPT-Engine spans ten canonical operations research problem classes,systematicall
 OPT-Engine facilitates rigorous, reproducible studies on how problem complexity impacts model performance, offering a more granular look at LLM formulation and solving capabilities.
 
 ![Pipeline](images/instance_pic.png)
+
+  1. First, we examine whether Pure-Text Reasoning (PTR) via classical Chain-of-Thought can efficiently tackle optimization tasks, finding that PTR suffers from a critical robustness gap as task complexity increases.  
+   2. Second, we examine whether integrating external computational tools can mitigate PTR's arithmetic weaknesses and improve performance. Our results indicate that while such tools help with local calculations, they still fail to adhere to global optimization constraints.  
+   3. Finally, we pinpoint that for the current SOTA paradigm, Solver-integrated Reasoning (SIR), the automated formulation of constraints represents the primary bottleneck.  
+
 
 ## Updates
 - **2026.05.01** - Our paper has been accepted for a poster presentation at ICML 2026! 🔥
@@ -46,20 +51,32 @@ Within the perturbation set, we introduce controlled variations across three dim
 
    * **Constraint Augmentation**: One additional simple linear constraint is introduced to the original formulation, testing how models handle incremental increases in problem structure without altering the core variables or objective.
 
-## Control experiments
-Our study, enabled by the C³-Bench dataset, addresses two critical questions about LLMs in optimization: 1.) Does LLM performance remain robust when generalizing to out-of-distribution optimization tasks that exceed the complexity levels of current benchmarks? 2.) At which stage of the solution pipeline—from problem interpretation to solution generation—do current LLMs encounter the most significant bottlenecks?
+##  PTR vs SIR
+Our study, enabled by the C³-Bench dataset, addresses two critical questions about LLMs in optimization:
+   1. Does LLM performance remain robust when generalizing to out-of-distribution optimization tasks that exceed the complexity levels of current benchmarks?
+2. Does augmenting LLMs with computational tools enable Pure-Text Reasoning (PTR) to overcome its limitations and achieve performance comparable to Solver-integrated Reasoning (SIR)?
 
-Our evaluation yields two primary findings:
+Here is an example of observation study of SIR vs PTR:
 
-   1.) Tool Integration is Essential for Scaling: We demonstrate that Tool-Integrated Reasoning (TIR) yields consistent performance trends across all problem classes. In stark contrast, Pure-Text Reasoning (PTR) exhibits a clear and progressive accuracy drop as problem complexity increases.
+![Pipeline](images/sir.png)
 
-   2.) The Semantic Sensitivity Bottleneck: We identify a critical "semantic sensitivity" failure mode: even frontier LLMs struggle to maintain formulation fidelity when the linguistic expression of constraints deviates from canonical problem descriptions, highlighting a major bottleneck in reliable automated problem-solving.
+ we conduct an error‑decomposition experiment that distinguishes between constraint feasibility and computational accuracy.
+![Pipeline](images/error.png)
 
-Here is an example of TIR vs PTR:
+- **SIR (Solver‑Integrated Reasoning):** Accuracy is contingent upon structural feasibility.
+- **PTR (Pure‑Text Reasoning):** Exhibits a dual‑failure trajectory:
+  - **Reasoning Collapse:** As problem complexity scales, the model fails to maintain global logical constraints.
+  - **Precision Deficit:** Lacks the deterministic precision required to attain exact mathematical optima.
+- **CompPTR (Computationally‑augmented PTR):** External computational support mitigates arithmetic errors, but cannot maintain a coherent global optimization strategy — performance degrades as problem size grows.
 
-![Pipeline](images/tir_ptr_pic.png)
 
+## The Primary bottleneck
 
+Based on the structural properties of optimization problems, we examine three dimensions: (1) Linguistic Complexity, (2) Objective Perturbations, and (3) Constraint Augmentation.
+
+![Pipeline](images/bottleneck.png)
+
+The Semantic Sensitivity Bottleneck. We identify a critical "semantic sensitivity" failure mode: even frontier LLMs struggle to maintain formulation fidelity when the linguistic expression of constraints deviates from canonical problem descriptions. This reveals a major bottleneck in reliable automated problem-solving.
 
 ## Citation
 If you find OPT-Engine useful or relevant to your research, please consider citing our paper:
