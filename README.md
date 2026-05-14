@@ -1,12 +1,10 @@
-
 <h2 align="center"> OPT-Engine: Benchmarking the Limits of LLMs in Optimization Modeling via Complexity Scaling</h2>
 <p align="center">
-    <p align="center" style="white-space: nowrap;">
-        <a href="https://arxiv.org/abs/2601.19924" style="display: inline-block;"><img src='https://img.shields.io/badge/Paper-OPTEngine-red'></a>
-        <a href="https://huggingface.co/Qwen/Qwen3-14B" style="display: inline-block;"><img src='https://img.shields.io/badge/Model-%F0%9F%A4%97%20HuggingFace-yellow'></a>
-        <a href="https://icml.cc/virtual/2026/poster/61027" style="display: inline-block;"><img src='https://img.shields.io/badge/ICML-2026-blue'></a>
-    </p>
+    <a href="https://icml.cc/virtual/2026/poster/61027"><img src='https://img.shields.io/badge/ICML-2026-007ACC?logo=icloud&logoColor=white'></a>
+    <a href="https://arxiv.org/abs/2601.19924"><img src='https://img.shields.io/badge/arXiv-2601.19924-b31b1b?logo=arxiv&logoColor=white'></a>
+    <a href="https://huggingface.co/chenyitian-shanshu/Qwen3-SIRL-4B"><img src='https://img.shields.io/badge/🤗%20HuggingFace-Model-yellow'></a>
 </p>
+
 ## Overview
 We introduce **OPT-Engine**, an extensible benchmark framework for optimization problems with controllable complexity and configurable templates.
 OPT-Engine spans ten canonical operations research problem classes,systematically scaling in complexity, thus provides a structured testbed for automated problem formulation and solving under different OR complexity.
