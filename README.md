@@ -1,4 +1,4 @@
-<img width="316" height="59" alt="image" src="https://github.com/user-attachments/assets/4c41ab76-d4b4-4eeb-a2e0-3725c8dce5ba" />
+
 <h2 align="center"> OPT-Engine: Benchmarking the Limits of LLMs in Optimization Modeling via Complexity Scaling</h2>
 <p align="center">
     <p align="center" style="white-space: nowrap;">
